@@ -1,0 +1,287 @@
+:root {
+  --primary: #3d5852;
+  --secondary: #86938f;
+  --tertiary: #5e877f;
+  --quatrinary: #6c6b67;
+  --light: #e3e4e3;
+  --dark: #182c23;
+  --error: rgb(228, 46, 1);
+  --border-radius: 0.3rem;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/* Resets */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  list-style-type: none;
+  color: inherit;
+}
+body {
+  background: var(--secondary);
+}
+
+main button {
+  font-size: 1.5rem;
+  color: var(--light);
+} main button:hover {
+  color: white;
+}
+main label {
+  font-size: 1.5rem;
+  color: var(--light);
+}
+
+input {
+  width: 200px;
+  padding: 10px;
+}
+
+/* HEADER */
+header {
+  background-color: var(--primary);
+  color: white;
+  font-size: 1.3rem;
+  padding: 1.3rem;
+}
+header button {
+  font-size: 1.3rem;
+}header button:hover {
+  text-decoration: underline;
+}
+.nav-link {
+  color: white;
+}
+.nav-item {
+  margin-right: 7px;
+}
+.nav-item a {
+  text-decoration: inherit;
+}
+.nav-item a:hover {
+  text-decoration: underline;
+}
+#logo {
+  font-size: 3rem;
+}
+
+main {
+  padding-top: 20px;
+}
+
+/* Projects */
+.main-project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  color: var(--light);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.projects:hover {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.projects .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 1.3rem;
+  background-color: #182c23;
+}
+
+.body_content {
+  padding: 50px 10px;
+}
+
+.container {
+  border: 5px solid black;
+  margin-bottom: 5px;
+  width: 80%;
+}.container:hover {
+  border: 5px solid var(--tertiary);
+}
+
+/* Dashboard */
+.projects-main {
+  margin-left: 50px;
+}
+#makeProject {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px 0; 
+}
+#project {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-bottom: 5px;
+}
+.user-projects {
+  display: flex;
+  color: var(--light);
+  text-decoration: none;
+  width: 100%;
+}.user-projects h2 {
+  text-decoration: none;
+}
+
+.user-project {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark);
+  padding: 10px;
+  width: 800px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}.user-project:hover {
+  border: 1px solid var(--light);
+}
+.contained {
+  margin-right: 100px;
+}
+
+/* User project */
+.single-projects {
+  display: flex;
+  justify-content: center;
+}
+.user-project-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+  width: 40%;
+  padding: 10px;
+}
+.user-project-single h2 {
+  font-size: 2rem;
+}
+.user-project-single * {
+  margin-bottom: 5px;
+}
+.edit {
+  color: var(--light);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+/* Project comments */
+.projectComments {
+  display: flex;
+  padding: 5px;
+}
+#project {
+  cursor: pointer;
+}
+.currentProject * {
+  color: var(--light);
+}
+.makeComments, .comments {
+  color: var(--light);
+}
+.comments {
+  width: 400px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.curProjectDescr {
+  margin-left: 50px;
+}
+.col-sm {
+  margin-right: 5px;
+}
+.commentsContainer {
+  padding: 5px;
+}
+.commentsContainer * {
+  margin-bottom: 3px;
+}
+.post-comment {
+  font-size: 1.3rem;
+}
+
+#makeComment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+#makeComment {
+  margin-bottom: 10px;
+}
+
+.container-robot {
+  margin-top: 200px;
+  position: relative;
+  width: 300px;
+  border: 1px solid black;
+}
+.container-robot #body {
+  width: 100%;
+}
+.container-robot #chat {
+  width: 100%;
+}
+.container-robot #body {
+  height: 200px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid black;
+}
+#bot {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 100px;
+}
+#body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 5px;
+  overflow: hidden;
+}
+.user {
+  align-self: flex-end;
+}
+#body p {
+  line-height: 1.5;
+}
+.container-robot button {
+  background-color: gray;
+}
+#chat {
+  display: flex;
+  flex-direction: column;
+}
+#chat * {
+  width: 100%;
+}
+#chat button {
+  cursor: pointer;
+}
+.option {
+  cursor: pointer;
+}
+.option:hover {
+  background-color: black;
+  color: white;
+}
